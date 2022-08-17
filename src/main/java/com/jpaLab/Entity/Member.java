@@ -5,7 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Table(schema = "tbl_member")
+@Table(name = "tbl_member")
 @Data
 @Builder
 @NoArgsConstructor
@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class Member {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long id;
 
     private String name;
